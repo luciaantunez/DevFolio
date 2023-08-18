@@ -21,6 +21,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 
   <!-- =======================================================
   * Template Name: DevFolio
@@ -338,38 +339,22 @@
                       </h5>
                     </div>
                     <div>
-                      <form action="https://formspree.io/f/xvojkeko" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
+                      <form id="my-form" action="https://formspree.io/f/xvojkeko" method="POST">
+                          <label for="name">Your name:</label>
+                              <input type="text" id="name" name="name">
+                          
+                          <label for="email">Your Email:</label>
+                              <input type="email" id="email" name="email">
+                          
+                          <label for="subject">Subject:</label>
+                              <input type="text" id="subject" name="subject">
+                          
+                          <label for="message">Message:</label>
+                              <textarea id="message" name="message"></textarea>
+                          
+                          <button id="my-form-button">Submit</button>
+                          <p id="my-form-status"></p>
+                      </form>                    
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -379,12 +364,6 @@
                       </h5>
                     </div>
                     <div class="more-info">
-<!--                       <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
-                        expedita aperiam aliquid at.
-                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                        mollitia inventore?
-                      </p> -->
                       <ul class="list-ico">
                         <li><span class="bi bi-geo-alt"></span> Uruguay</li>
                         <li><span class="bi bi-phone"></span> (+598) 98 329 378</li>
